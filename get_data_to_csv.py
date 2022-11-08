@@ -9,7 +9,7 @@ error = open('error.txt', 'w', encoding='utf-8')
 
 #Cum thi = (1, 64) ---> Nên lấy từng cụm thi để tránh bị lỗi
 allValue = []
-for cum in range(10, 11):
+for cum in range(11, 20):
     cumthi = cum
     if cumthi < 10:
         cumthi = '0' + str(cumthi)
