@@ -18,16 +18,46 @@ ID | 20127588 | 20127383 | 19127344
     - Với một lần gọi thì ta sẽ lấy được tất cả các điểm của thí sinh, môn nào không thi thì sẽ có giá trị là chuối rỗng (Sử = '')
     
 **2. Phân tích dữ liệu**
-- Tỷ lệ học sinh đậu, rớt tốt nghiệp, loại gì? Từ đó đếm số hs tốt nghiệp loại giỏi, khá, tb, rớt --> Đưa ra học sinh của tỉnh đó học đều các môn hay học lệch để thi đại học?
-- Đưa ra top03 tỉnh có điểm môn toán cao/thấp nhất 
-    - Tỉnh có số điểm 10 môn toán nhiều nhất
-    - Tỉnh có số điểm > 9 môn toán nhiều nhất
-- Xuất ra phổ điểm của từng môn. Từ đó đánh giá mức độ đề năm 2022 là dễ, vừa, khó?
-- Phân tích tương quan giữa các môn? Môn toán tốt thì lý, hóa có tốt không? Môn toán tốt thì ngữ văn có tốt không, hay ngược lại?
+
+- Phân tích tương quan giữa các môn? 
+    - Môn toán tốt thì lý, hóa có tốt không? 
+    - Môn hóa tốt thì tiếng anh có tốt không?
+    - Có cặp môn nào mà môn này điểm cao thì môn kia điểm thấp không?
+    - Giải thích vì sao?
+
+- Phân lớp dữ liệu - Thí sinh nào:
+    - DT1: Tham gia thi THPTQG
+        - khối KHTN
+        - khối KHXH
+    - DT2: Thi tốt nghiệp đến từ Giáo dục thường xuyên:
+        - khối KHTN
+        - khối KHXH
+    - DT3: Thi lại đại học (Đã tốt nghiệp THPT)
+    - DT4: Thi lại tốt nghiệp (Chưa tốt nghiệp)
+
+- Phân tích - Đánh giá - Nhận xét các lớp dữ liệu:
+    - Số lượng các lớp dữ liệu
+    - Tỷ lệ (%) các lớp dữ liệu
+    - Tỷ lệ tốt nghiệp của DT1 và DT2:
+    - Số thí sinh + tỉ lệ _ tốt nghiệp loại giỏi, khá, trung bình, tạch
+    - Phân bố điểm tốt nghiệp của DT1 và DT2 -- Boxplot
+    - Tính mean + median từng môn của DT1 so với DT3:
+        - Kiểm tra xem thi lại thì điểm có cao hơn trung bình không?
+        - Nếu có thì cao hơn bao nhiêu? nhiều hay ít?
+        - Nếu không thì giải thích vì sao môn đó lại thi lại mà không cao hơn?
+
+- Xuất ra phân bố điểm của từng môn -- Boxplot: 
+    - Từ đó đánh giá mức độ đề năm 2022 là dễ, vừa, khó?
+    - Môn nào mà đa số (50%) thí sinh đạt điểm cao?
+    - Môn nào mà đa số (50%) thí sinh đạt điểm thấp?
+    
+- Đưa ra top10 tỉnh có:
+    - Số điểm 10 môn toán nhiều nhất
+    - Số điểm > 9 môn ngữ văn nhiều nhất
+    - Tổng điểm khối B > 27 nhiều nhất
+
 
 **3. Dự đoán từ dữ liệu**
-- Đếm số hs theo ban tự nhiên, xã hội. 
-- Cho điểm: toán, văn, anh, tổ hợp. Dự đoán hs đó sẽ thi khối nào?
+- Cho điểm: toán, văn, anh, tổ hợp. Dự đoán hs đó sẽ thi khối nào? (dựa vào tổng 3 môn cao nhất + độ phổ biến của khối đó)
 - Dự đoán điểm môn toán thông qua hóa + lý. Ngữ Văn qua sử địa gdcd
-- Dự đoán hs có đủ điểm tốt nghiệp không (toán, văn, anh) ? --> Cây quyết định.
 - Từ điểm + khối --> Tìm kiếm xem học sinh đó sẽ đậu những ngành (và trường) nào thông qua chromedriver
