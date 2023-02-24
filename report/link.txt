@@ -1,0 +1,8 @@
+- Trang lấy data: https://tienphong.vn/tra-cuu-diem-thi.tpo
+- API - 1 người: https://tienphong.vn/api/diemthi/get/result?type=0&keyword=32000002&kythi=THPT&nam=2022&cumthi=0
+- API - 100ng  : https://tienphong.vn/api/diemthi/get/result?type=0&keyword=320000&kythi=THPT&nam=2022&cumthi=0
+- Trello: https://trello.com/b/hxbarbdS/nh%C3%B3m-2-khdl
+- Data + Github: https://github.com/ntp-shin/IntroDataScience02
+
+Do dữ liệu khá nhiều nên để tiết kiệm thời gian thì thầy git clone về cho nhanh
+Em xin cảm ơn.
