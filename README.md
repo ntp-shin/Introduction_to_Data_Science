@@ -1,4 +1,4 @@
-# Introduction to Data Science - Group 02 - THPTQG
+# Introduction to Data Science (HCMUS) - Group 02 - THPTQG
 
 - **GVLT:** 	*Nguyễn Ngọc Thảo*
 - **GVTH:**   *Kiều Vũ Minh Đức*
@@ -60,7 +60,7 @@ ID | 20127588 | 20127383 | 19127344
 **3. Dự đoán từ dữ liệu**
 - Cho điểm: toán, văn, anh, tổ hợp. Dự đoán hs đó sẽ thi khối nào? (dựa vào tổng 3 môn cao nhất + độ phổ biến của khối đó)
 - Dự đoán điểm môn toán thông qua hóa + lý. Ngữ Văn qua sử địa gdcd
-- Từ điểm + khối --> Tìm kiếm xem học sinh đó sẽ đậu những ngành (và trường) nào thông qua chromedriver
+- Tính toán, dự đoán điểm chuẩn của một ngành sẽ thay đổi như thế nào (tăng / giảm)
 
 ------------------------------------------------------------------------------------
 ## Kỳ thi tốt nghiệp THPTQG
